@@ -11,6 +11,14 @@ A beautifully designed, full-stack collaborative project management tool built f
 
 <br>
 
+
+
+
+
+
+
+
+
 <div align="center">
   <img src="assets/task3_final_pic.png" alt="Project Management Dashboard" width="100%" style="border-radius: 8px;">
 </div>

@@ -59,10 +59,10 @@ function App() {
       <Toaster position="top-right" />
       <Routes>
         <Route path="/" element={
-          localStorage.getItem('token') ? <Navigate to="/inbox" /> : <Login />
+          localStorage.getItem('token') ? <Navigate to="/dashboard" /> : <Login />
         } />
         <Route path="/login" element={
-          localStorage.getItem('token') ? <Navigate to="/inbox" /> : <Login />
+          localStorage.getItem('token') ? <Navigate to="/dashboard" /> : <Login />
         } />
         <Route path="/dashboard" element={
           <ProtectedRoute><Dashboard /></ProtectedRoute>

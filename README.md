@@ -1,6 +1,6 @@
 # 🚀 Project Management Tool (CodeAlpha Task 3)
 
-![Live Demo](https://img.shields.io/badge/Live_Demo-Online-success?style=for-the-badge)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Online-success?style=for-the-badge)](https://task3-frontend-60bc.onrender.com)
 
 **Live Demo:** 👉 [https://task3-frontend-60bc.onrender.com](https://task3-frontend-60bc.onrender.com) 👈
 

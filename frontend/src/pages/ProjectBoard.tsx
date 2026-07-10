@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { api } from '../api';
+import { api, BACKEND_URL } from '../api';
 import { useParams, Link } from 'react-router-dom';
 import { io } from 'socket.io-client';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -36,7 +36,9 @@ export default function ProjectBoard() {
   useEffect(() => {
     fetchProject();
     
-    const socket = io('http://localhost:5000');
+    if (!id) return;
+    
+    const socket = io(BACKEND_URL);
     socket.emit('joinProject', id);
     
     socket.on('taskAdded', (task) => {

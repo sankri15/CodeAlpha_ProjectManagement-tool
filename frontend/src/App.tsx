@@ -13,14 +13,14 @@ import CreateProject from './pages/CreateProject';
 import HelpPage from './pages/HelpPage';
 import { Toaster, toast } from 'react-hot-toast';
 import { io } from 'socket.io-client';
-import { api } from './api';
+import { api, BACKEND_URL } from './api';
 import { useNavigate } from 'react-router-dom';
 
 function GlobalNotificationListener() {
   const navigate = useNavigate();
 
   React.useEffect(() => {
-    const socket = io('http://localhost:5000');
+    const socket = io(BACKEND_URL);
     
     // Join all project rooms for this user
     api.get('/projects').then(({ data }) => {

@@ -9,9 +9,13 @@
 </div>
 A beautifully designed, full-stack collaborative project management tool built for CodeAlpha. It features Trello-style Kanban boards, real-time collaboration via WebSockets, and a stunning modern Glassmorphism user interface.
 
+<br>
+
 <div align="center">
   <img src="assets/task3_final_pic.png" alt="Project Management Dashboard" width="100%" style="border-radius: 8px;">
 </div>
+
+<br>
 
 ## ✨ Key Features
 

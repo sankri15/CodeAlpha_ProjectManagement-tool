@@ -3,7 +3,7 @@ services:
     name: task3-backend
     env: node
     plan: free
-    buildCommand: cd backend && npm install
+    buildCommand: cd backend && npm install --include=dev && npm run build
     startCommand: cd backend && npm start
     envVars:
       - key: PORT

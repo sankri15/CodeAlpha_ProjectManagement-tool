@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-[#1E1F21] font-sans antialiased;
+    background-color: #f6f8f9;
+    background-image: 
+      radial-gradient(at 10% 20%, hsla(220, 100%, 85%, 0.5) 0px, transparent 50%),
+      radial-gradient(at 80% 0%, hsla(280, 100%, 85%, 0.5) 0px, transparent 50%),
+      radial-gradient(at 0% 50%, hsla(355, 100%, 90%, 0.5) 0px, transparent 50%),
+      radial-gradient(at 80% 50%, hsla(340, 100%, 85%, 0.5) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, hsla(22, 100%, 85%, 0.5) 0px, transparent 50%),
+      radial-gradient(at 80% 100%, hsla(190, 100%, 85%, 0.5) 0px, transparent 50%),
+      radial-gradient(at 0% 0%, hsla(343, 100%, 85%, 0.5) 0px, transparent 50%);
+    background-attachment: fixed;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white border border-[#E8ECEE] shadow-sm;
+  }
+  
+  .flow-button {
+    @apply bg-[#F06A6A] hover:bg-[#E25C5C] text-white px-4 py-2 rounded font-medium transition-colors;
+  }
+
+  .flow-input {
+    @apply w-full px-3 py-2 bg-white border border-[#E8ECEE] rounded focus:outline-none focus:border-[#008CC9] focus:ring-1 focus:ring-[#008CC9] transition-shadow text-[#1E1F21];
+  }
+
+  /* 3D Effects */
+  .effect-3d {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 
+                0 10px 15px -3px rgba(0, 0, 0, 0.05),
+                inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    transform: translateY(0);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+  
+  .effect-3d:hover {
+    box-shadow: 0 10px 20px -2px rgba(0, 0, 0, 0.08), 
+                0 20px 25px -5px rgba(0, 0, 0, 0.05),
+                0 30px 40px -10px rgba(0, 140, 201, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    transform: translateY(-4px) scale(1.01);
+  }
+  
+  .effect-3d-active:active {
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.05),
+                inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    transform: translateY(1px) scale(0.99);
+  }
+}

@@ -1,9 +1,12 @@
+<div align="center">
+
 # 🚀 Project Management Tool (CodeAlpha Task 3)
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-Online-success?style=for-the-badge)](https://task3-frontend-60bc.onrender.com)
 
 **Live Demo:** 👉 [https://task3-frontend-60bc.onrender.com](https://task3-frontend-60bc.onrender.com) 👈
 
+</div>
 A beautifully designed, full-stack collaborative project management tool built for CodeAlpha. It features Trello-style Kanban boards, real-time collaboration via WebSockets, and a stunning modern Glassmorphism user interface.
 
 ## ✨ Key Features

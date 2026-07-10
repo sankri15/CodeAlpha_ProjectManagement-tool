@@ -45,11 +45,8 @@ router.get('/', async (req: any, res) => {
         (SELECT COUNT(*) FROM tasks WHERE projectId = p.id AND isCompleted = 1) as completedTasks,
         (SELECT COUNT(*) FROM project_members WHERE projectId = p.id) as memberCount
        FROM projects p 
-       LEFT JOIN project_members pm ON p.id = pm.projectId 
        LEFT JOIN users u ON p.ownerId = u.id
-       WHERE p.ownerId = ? OR pm.userId = ?
-       GROUP BY p.id`, 
-       [req.user.id, req.user.id]
+       GROUP BY p.id`
     );
     res.json(projects);
   } catch (error: any) {

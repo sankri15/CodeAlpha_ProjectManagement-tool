@@ -1,5 +1,3 @@
 node_modules
 dist
 .env
-database.sqlite
-database.sqlite-journal
